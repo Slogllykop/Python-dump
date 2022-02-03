@@ -1,11 +1,12 @@
-import random
-n=20
-number=int((n*random.random())+1)
-guess=0
-while guess != number:
-    guess=int(input("Enter the number: "))
-    if guess>0:
-        if guess>number:print("Number is too large!")
-        elif guess<number:print("Number is too small!")
-    else:print("Sorry, you lost the game!")
-else:print('Congratulations! You won the game!')
+import random as R
+I,P=int,print
+E=20
+B=I(E*R.random()+1)
+A=0
+while A!=B:
+	A=I(input('Enter the number: '))
+	if A>0:
+		if A>B:P('Number is too large!')
+		elif A<B:P('Number is too small!')
+	else:P('Sorry, you lost the game!')
+else:P('Congratulations! You won the game!')
