@@ -1,3 +1,2 @@
-M,V=map(float,input('Enter mass & velocity: ').split())
-A=M*V*V
-print(f'The momentum is: {A}Kgm/s')
+M,V=map(float,input('Enter mass[Kg] & velocity[m/s]: ').split())
+print(f'The momentum is: {M*V*V}Kgm/s')
