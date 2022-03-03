@@ -16,12 +16,9 @@ while True:
     print(f"\n{'*'*18}Bill{'*'*18}\nItem name    Item Quantity    Item Price\n{'*'*40}")
     item=list(map(str,input().split()))
     if len(item[1])<5 and len(item[2])<6:
-        ppi=int(item[1])*int(item[2])
-        counter.append(ppi)
-    else: counter.append(0)
-    item_name.append(itna(item[0]))
-    item_quantity.append(itqu(item[1]))
-    item_price.append(str(itpr(item[2])))
+        ppi=int(item[1])*int(item[2]);counter.append(ppi)
+    else:counter.append(0)
+    item_name.append(itna(item[0]));item_quantity.append(itqu(item[1]));item_price.append(str(itpr(item[2])))
     A=input('\nDo you want to add another item [Y/N]: ')
     if A=='n' or A=='N':
         print(f"\n{'*'*18}Bill{'*'*18}\nItem name    Item Quantity    Item Price")
@@ -33,7 +30,6 @@ while True:
             elif item_price[j]=='0':
                 if item_quantity[j]==0:print(f"{item_name[j]}    Out of Stock!    {' '*9}0")
                 else:print(f"{item_name[j]}    {item_quantity[j]}    Expensive!")
-            else:
-                print(f"{item_name[j]}    {item_quantity[j]}    {item_price[j]}")
+            else:print(f"{item_name[j]}    {item_quantity[j]}    {item_price[j]}")
         print(f"{'*'*40}\nTotal amount to be paid: Rs.{sum(counter)}/-\n{'*'*40}")
         break
