@@ -32,4 +32,16 @@ while True:
                 else:print(f"{item_name[j]}    {item_quantity[j]}    Expensive!")
             else:print(f"{item_name[j]}    {item_quantity[j]}    {item_price[j]}")
         print(f"{'*'*40}\nTotal amount to be paid: Rs.{sum(counter)}/-\n{'*'*40}")
+        with open(f'Grocery_bill.txt','w') as f:
+            f.write(f"\n{'*'*18}Bill{'*'*18}\nItem name    Item Quantity    Item Price\n")
+            f.write(f"{'*'*40}\n")
+            for j in range(len(item_name)):
+                if item_quantity[j]==0:
+                    if item_price[j]=='0':f.write(f"{item_name[j]}    Out of Stock!    Expensive!\n")
+                    else:f.write(f"{item_name[j]}    Out of Stock!    {item_price[j]}\n")
+                elif item_price[j]=='0':
+                    if item_quantity[j]==0:f.write(f"{item_name[j]}    Out of Stock!    {' '*9}0\n")
+                    else:f.write(f"{item_name[j]}    {item_quantity[j]}    Expensive!\n")
+                else:f.write(f"{item_name[j]}    {item_quantity[j]}    {item_price[j]}\n")
+            f.write(f"{'*'*40}\nTotal amount to be paid: Rs.{sum(counter)}/-\n{'*'*40}")
         break

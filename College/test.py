@@ -1,15 +1,16 @@
-# for i in range(1,6):
-#     for j in range(i):
-#         print("*",end="")
-# i=1
+# from turtle import *
+# color('red', 'yellow')
+# begin_fill()
 # while True:
-#     if i%0O7==0:
+#     forward(20)
+#     left(9)
+#     if abs(pos()) < 1:
 #         break
-#     print(i)
-#     i += 1
+# end_fill()
+# done()
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 
+sum = num1 + num2
 
-
-
-days = "Mon, Tue, Wed, Thu, Fri, Sat, Sun"
-print(days[::5])
+print("The sum of the two numbers is",sum)
