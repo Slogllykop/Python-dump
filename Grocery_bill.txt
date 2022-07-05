@@ -2,7 +2,9 @@
 ******************Bill******************
 Item name    Item Quantity    Item Price
 ****************************************
-ejrojeo..         50                 100
+dffrfge            3                 434
+ffgfwef..         23                 343
+dfefwef..         22                  43
 ****************************************
-Total amount to be paid: Rs.5000/-
+Total amount to be paid: Rs.10137/-
 ****************************************
