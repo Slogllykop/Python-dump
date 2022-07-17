@@ -7,13 +7,3 @@ for i in range(int(input())):
     else:
         if sum(s)%2==0:print("CHEFINA")
         else:print("CHEF")
-        
-# for i in arr:
-#         if(i==1):
-#             print("CHEF")
-#             break
-#     else:
-#         if(sum(arr)%2 == 0):
-#             print("CHEFINA")
-#         else:
-#             print("CHEF")
